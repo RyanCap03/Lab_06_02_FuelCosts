@@ -10,6 +10,7 @@ public class Main
         double mpg = 0;
         double pricePG = 0;
         double hundred;
+        double distance;
 
         System.out.print("How many gallons of gas are in your vehicle?: ");
         if (in.hasNextDouble())
@@ -49,6 +50,9 @@ public class Main
 
         hundred = (100/mpg)*pricePG;
         System.out.println("The cost per 100 miles is: $" + hundred);
+
+        distance = gallons * mpg;
+        System.out.println("you can drive " + distance + " more miles until you need to get gas!");
 
 
     }
